@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist with Video Background</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔁 Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- ✅ Checklist App -->
+  <div class="container">
+    <h2>Checklist Manager</h2>
+
+    <input type="text" id="searchInput" placeholder="Search..." onkeyup="filterList()">
+
+    <div class="add-box">
+      <input type="text" id="itemInput" placeholder="Add new item">
+      <button onclick="addItem()">Add</button>
+    </div>
+
+    <div class="actions">
+      <button onclick="checkAll(true)">Check All</button>
+      <button onclick="checkAll(false)">Uncheck All</button>
+      <button onclick="clearList()">Clear List</button>
+    </div>
+
+    <ul id="itemList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
