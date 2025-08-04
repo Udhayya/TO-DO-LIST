@@ -1,0 +1,99 @@
+/* 🔁 Background Video Styling */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5); /* makes content more readable */
+}
+
+/* 📦 App Container */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* 🎯 Input & Buttons */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.add-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-box input {
+  flex: 1;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 📋 Checklist */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #555;
+}
+
+li span {
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+li.checked span {
+  text-decoration: line-through;
+  color: #ccc;
+  transform: scale(1.01);
+}
